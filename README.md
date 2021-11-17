@@ -13,22 +13,22 @@ Postcss `required by webpacker 5.4`
 
 Create rails project
 
-  ```bash
-  rails new rails6_tailwindcss2_webpack -d mysql --skip-spring
-  ```
+```bash
+rails new rails6_tailwindcss2_webpack -d mysql --skip-spring
+```
 
 Scaffold model `Book`
 
-  ```bash
-  bin/rails g scaffold book name:string price:integer
-  ```
+```bash
+bin/rails g scaffold book name:string price:integer
+```
 
 Create db and table
 
-  ```bash
-  bin/rails db:create
-  ```
+```bash
+bin/rails db:create
+```
 
-  ```bash
-  bin/rails db:migrate
-  ```
+```bash
+bin/rails db:migrate
+```
