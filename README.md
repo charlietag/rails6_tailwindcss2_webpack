@@ -1,27 +1,34 @@
-# README
+# Enviroment
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Ruby
+  * 3.0.2
+Rails
+  * 6.1.4.1
+Webpacker `requied by Rails 6`
+  * 5.4.3
+Postcss `required by webpacker 5.4`
+  * 7
 
-Things you may want to cover:
+# Prepare
 
-* Ruby version
+Create rails project
 
-* System dependencies
+  ```bash
+  rails new rails6_tailwindcss2_webpack -d mysql --skip-spring
+  ```
 
-* Configuration
+Scaffold model `Book`
 
-* Database creation
+  ```bash
+  bin/rails g scaffold book name:string price:integer
+  ```
 
-* Database initialization
+Create db and table
 
-* How to run the test suite
+  ```bash
+  bin/rails db:create
+  ```
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-rails new rails6_tailwindcss2_webpack -d mysql --skip-spring
+  ```bash
+  bin/rails db:migrate
+  ```
