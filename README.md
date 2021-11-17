@@ -124,3 +124,31 @@ Edit `app/javascript/stylesheets/tailwind.config.js`
     require('@tailwindcss/aspect-ratio'),
   ]
 ```
+
+# Taiwind CSS 2 - Usage
+
+### Prepare for taiwindcss compilation
+
+Run rails server and webpack-dev-server
+
+```bash
+bin/rails s
+```
+
+```bash
+bin/webpack-dev-server
+```
+
+### Usage Reference
+
+Container
+* https://tailwindcss.tw/docs/container
+
+Table
+* https://tailwindcss.com/docs/border-collapse
+
+Components
+* https://tailwindcomponents.com/components
+
+TailwindCSS Page Creator
+* https://devdojo.com/tails
