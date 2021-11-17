@@ -9,7 +9,7 @@ Webpacker `requied by Rails 6`
 Postcss `required by webpacker 5.4`
   * 7
 
-# Prepare
+# Rails 6
 
 Create rails project
 
@@ -32,3 +32,14 @@ bin/rails db:create
 ```bash
 bin/rails db:migrate
 ```
+
+# Tailwindcss 2
+
+
+Installing Tailwind CSS as a PostCSS plugin - PostCSS 7 compatibility build (Rails 6 does not support postcss 8 yet)
+
+```bash
+yarn tailwindcss@npm:@tailwindcss/postcss7-compat postcss@^7 autoprefixer@^9
+```
+
+
