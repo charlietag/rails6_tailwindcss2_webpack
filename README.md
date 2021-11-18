@@ -207,22 +207,22 @@ Optimizing-for-production
 # Configuration Sample
 
 postcss.config.js
-* github/
+* https://github.com/charlietag/rails6_tailwindcss2_webpack/blob/master/postcss.config.js
 
 tailwind.config.js
-* github/
+* https://github.com/charlietag/rails6_tailwindcss2_webpack/blob/master/app/javascript/stylesheets/tailwind.config.js
 
 application.js
-* github
+* https://github.com/charlietag/rails6_tailwindcss2_webpack/blob/master/app/javascript/packs/application.js
 
 application.scss
-* github
+* https://github.com/charlietag/rails6_tailwindcss2_webpack/blob/master/app/javascript/stylesheets/application.scss
 
 layouts/application.html.erb
-* github
+* https://github.com/charlietag/rails6_tailwindcss2_webpack/blob/master/app/views/layouts/application.html.erb
 
 table tag Tailwind CSS way
-* github
+* https://github.com/charlietag/rails6_tailwindcss2_webpack/blob/master/app/views/books/index.html.erb
 
 # Taiwind CSS 2 - Usage
 
