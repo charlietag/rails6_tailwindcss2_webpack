@@ -121,6 +121,10 @@ Setup PostCSS configuration `<rails_app>/postcss.config.js`
  }
 ```
 
+### Reference
+
+https://github.com/charlietag/rails6_tailwindcss2_webpack/compare/v0.0.1...v0.0.2
+
 # Tailwind CSS 2 - Official plugins
 
 ### Installing Tailwind CSS official plugins
