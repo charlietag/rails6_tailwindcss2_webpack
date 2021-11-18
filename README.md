@@ -151,7 +151,7 @@ Edit `app/javascript/stylesheets/application.scss`
 @import "tailwindcss/utilities";
 ```
 
-* Ref. https://github.com/rails/webpacker#usage 
+> Ref. https://github.com/rails/webpacker#usage
 
 ### Append header into html layout
 
