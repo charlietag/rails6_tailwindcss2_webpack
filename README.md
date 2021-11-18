@@ -69,7 +69,7 @@ https://github.com/charlietag/rails6_tailwindcss2_webpack/compare/v0.0.0...v0.0.
 PostCSS 7 compatibility build (**Rails 6** does not support **PostCSS 8 yet**)
 
 ```bash
-yarn tailwindcss@npm:@tailwindcss/postcss7-compat postcss@^7 autoprefixer@^9
+yarn add tailwindcss@npm:@tailwindcss/postcss7-compat postcss@^7 autoprefixer@^9
 ```
 
 ### Prepare for Tailwind CSS
