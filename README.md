@@ -228,11 +228,19 @@ table tag Tailwind CSS way
 
 ### Prepare for TaiwindCSS compilation
 
-Run rails server and webpack-dev-server
+Run rails server on local computer
 
 ```bash
 bin/rails s
 ```
+
+*Or run on remote server*
+
+```bash
+bin/rails s -b 0.0.0.0
+```
+
+Run webpack-dev-server
 
 ```bash
 bin/webpack-dev-server
