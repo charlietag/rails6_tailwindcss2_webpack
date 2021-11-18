@@ -92,7 +92,7 @@ Setup PostCSS configuration `<rails_app>/postcss.config.js`
  module.exports = {
    plugins: [
      require('postcss-import'),
-+    require('tailwindcss'),
++    require('tailwindcss')('./app/javascript/stylesheets/tailwind.config.js'),
      require('postcss-flexbugs-fixes'),
      require('postcss-preset-env')({
        autoprefixer: {
@@ -123,6 +123,41 @@ Edit `app/javascript/stylesheets/tailwind.config.js`
     require('@tailwindcss/line-clamp'),
     require('@tailwindcss/aspect-ratio'),
   ]
+```
+
+# Integrating Taiwind CSS 2 with Rails 6
+
+### Import SCSS file into webpack
+
+Edit `app/javascript/packs/application.js`
+
+```diff
+  //...
+  // append at the bottom
++ import "stylesheets/application"
+```
+
+### Import Taiwind CSS
+
+Edit `app/javascript/stylesheets/application.scss`
+
+```css
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+```
+
+* Ref. https://github.com/rails/webpacker#usage 
+
+### Append header into html layout
+
+Edit `app/views/layouts/application.html.erb`, to make sure `SCSS`, `LESS`, `CSS` configured under `app/javascript/packs/application.js` will be compiled by **webpack**
+
+```diff
+        <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+        <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
++       <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'  %>
+      </head>
 ```
 
 # Taiwind CSS 2 - Usage
