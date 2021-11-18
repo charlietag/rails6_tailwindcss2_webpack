@@ -60,7 +60,7 @@ bin/rails s -b 0.0.0.0
 
 ### Reference
 
-https://github.com/charlietag/rails6_tailwindcss2_webpack/compare/v0.0.1...v0.0.2
+https://github.com/charlietag/rails6_tailwindcss2_webpack/compare/v0.0.0...v0.0.1
 
 # Tailwind CSS 2
 
