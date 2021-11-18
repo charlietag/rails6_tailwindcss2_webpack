@@ -13,15 +13,14 @@
 
   <div class="field">
     <%= form.label :name %>
-    <%= form.text_field :name %>
+    <%= form.text_field :name, class: "block border border-grey-light w-full p-3 rounded mb-4"  %>
   </div>
 
   <div class="field">
     <%= form.label :price %>
-    <%= form.number_field :price %>
+    <%= form.number_field :price, class: "block border border-grey-light w-full p-3 rounded mb-4" %>
   </div>
 
-  <div class="actions">
-    <%= form.submit %>
-  </div>
+    <%#= form.submit "Submit", class: "w-full text-center py-3 rounded bg-indigo-600 text-white hover:bg-green-dark focus:outline-none" %>
+    <%= form.submit "Submit", class: "w-full text-center bg-indigo-500 text-white px-4 py-2 border rounded-md hover:bg-white hover:border-indigo-500 hover:text-black" %>
 <% end %>

@@ -238,9 +238,13 @@ bin/rails s
 bin/webpack-dev-server
 ```
 
-###  Tailwind CSS Usage Reference
+### Reference
 
-#### Configuration
+https://github.com/charlietag/rails6_tailwindcss2_webpack/compare/v0.0.5...v0.0.6
+
+#  Tailwind CSS Usage Reference
+
+### Configuration
 
 configuring-variants
 > The `variants` section of your `tailwind.config.js` file is where you control which variants should be enabled for each core plugin:
@@ -249,7 +253,7 @@ configuring-variants
 tailwindcss-group-hover-not-working-on-border-color
 * https://stackoverflow.com/questions/63266702/tailwindcss-group-hover-not-working-on-border-color
 
-#### Design
+### Design
 Container
 * https://tailwindcss.tw/docs/container
 
@@ -259,7 +263,7 @@ Table
 Step by step from scratch
 * https://www.honeybadger.io/blog/tailwind-css-rails
 
-#### Tools
+### Tools
 Components
 * https://tailwindcomponents.com/components
 
