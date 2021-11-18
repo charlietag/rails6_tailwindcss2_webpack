@@ -2,10 +2,13 @@
 
 Ruby
   * 3.0.2
+
 Rails
   * 6.1.4.1
+
 Webpacker `requied by Rails 6`
   * 5.4.3
+
 Postcss `required by webpacker 5.4`
   * 7
 
@@ -58,7 +61,7 @@ yarn tailwindcss@npm:@tailwindcss/postcss7-compat postcss@^7 autoprefixer@^9
 
 ### Prepare for Tailwind CSS
 
-Create `folder` and `tailwind.config.js` under javascript
+Create **folder** to place cutom **SCSS** file, which is used to be compiled by webpack
 
 ```bash
 cd app/javascript
@@ -68,9 +71,10 @@ cd stylesheets && touch application.scss
 
 ### Setup Tailwind CSS
 
-Create tailwindcss configuration file
+Create TailwindCSS configuration file
 
 ```bash
+cd app/javascript/stylesheets
 npx tailwindcss init
 ```
 
