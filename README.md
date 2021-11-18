@@ -46,9 +46,21 @@ bin/rails db:migrate
 
 ### Run rails server
 
+Running on local computer
+
 ```bash
 bin/rails s
 ```
+
+Running on remote server
+
+```bash
+bin/rails s -b 0.0.0.0
+```
+
+### Reference
+
+https://github.com/charlietag/rails6_tailwindcss2_webpack/compare/v0.0.1...v0.0.2
 
 # Tailwind CSS 2
 
