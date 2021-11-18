@@ -187,6 +187,10 @@ Edit `app/views/layouts/application.html.erb`, to make sure `SCSS`, `LESS`, `CSS
       </head>
 ```
 
+### Reference
+
+https://github.com/charlietag/rails6_tailwindcss2_webpack/compare/v0.0.3...v0.0.4
+
 ### Tailwind CSS Installation Reference
 
 Installation
