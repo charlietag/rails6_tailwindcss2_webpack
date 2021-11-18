@@ -136,6 +136,7 @@ yarn add @tailwindcss/typography @tailwindcss/forms @tailwindcss/line-clamp @tai
 ### Setup Taiwind CSS official plugins
 
 Edit `app/javascript/stylesheets/tailwind.config.js`
+> https://tailwindcss.com/docs/plugins#official-plugins
 
 ```javascript
   plugins: [
@@ -145,6 +146,10 @@ Edit `app/javascript/stylesheets/tailwind.config.js`
     require('@tailwindcss/aspect-ratio'),
   ]
 ```
+
+### Reference
+
+https://github.com/charlietag/rails6_tailwindcss2_webpack/compare/v0.0.2...v0.0.3
 
 # Integrating Taiwind CSS 2 with Rails 6
 
