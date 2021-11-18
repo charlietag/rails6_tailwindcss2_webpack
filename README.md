@@ -53,7 +53,7 @@ bin/rails s
 
 ### Installing Tailwind CSS as a PostCSS plugin
 
-PostCSS 7 compatibility build (Rails 6 does not support postcss 8 yet)
+PostCSS 7 compatibility build (**Rails 6** does not support **PostCSS 8 yet**)
 
 ```bash
 yarn tailwindcss@npm:@tailwindcss/postcss7-compat postcss@^7 autoprefixer@^9
