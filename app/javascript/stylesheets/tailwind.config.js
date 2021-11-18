@@ -28,6 +28,14 @@ module.exports = {
 
   darkMode: false, // or 'media' or 'class'
   theme: {
+    // extend: {
+    //   lineClamp: {
+    //     7: '7',
+    //     8: '8',
+    //     9: '9',
+    //     10: '10',
+    //   }
+    // },
     extend: {},
   },
   variants: {
