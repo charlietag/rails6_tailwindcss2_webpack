@@ -1,3 +1,4 @@
+
 # Enviroment
 
 Ruby
@@ -144,6 +145,7 @@ Edit `app/javascript/packs/application.js`
 ### Import Taiwind CSS
 
 Edit `app/javascript/stylesheets/application.scss`
+> https://tailwindcss.com/docs/preflight
 
 ```css
 @import "tailwindcss/base";
@@ -151,11 +153,11 @@ Edit `app/javascript/stylesheets/application.scss`
 @import "tailwindcss/utilities";
 ```
 
-> Ref. https://github.com/rails/webpacker#usage
 
 ### Append header into html layout
 
 Edit `app/views/layouts/application.html.erb`, to make sure `SCSS`, `LESS`, `CSS` configured under `app/javascript/packs/application.js` will be compiled by **webpack**
+> https://github.com/rails/webpacker#usage
 
 ```diff
         <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -164,9 +166,42 @@ Edit `app/views/layouts/application.html.erb`, to make sure `SCSS`, `LESS`, `CSS
       </head>
 ```
 
+### Tailwind CSS Installation Reference
+
+Installation
+* https://webdevchallenges.com/add-tailwind-to-rails
+* https://web-crunch.com/posts/how-to-install-tailwind-css-2-using-ruby-on-rails
+
+With **JIT** mode
+* https://dev.to/davidteren/getting-started-with-rails-6-1-tailwindcss-jit-webpacker-postcss-8-25g7
+* https://tailwindcss.com/docs/just-in-time-mode
+
+Optimizing-for-production
+* https://tailwindcss.com/docs/optimizing-for-production
+
+# Configuration Sample
+
+postcss.config.js
+* github/
+
+tailwind.config.js
+* github/
+
+application.js
+* github
+
+application.scss
+* github
+
+layouts/application.html.erb
+* github
+
+table tag Tailwind CSS way
+* github
+
 # Taiwind CSS 2 - Usage
 
-### Prepare for taiwindcss compilation
+### Prepare for TaiwindCSS compilation
 
 Run rails server and webpack-dev-server
 
@@ -178,16 +213,33 @@ bin/rails s
 bin/webpack-dev-server
 ```
 
-### Usage Reference
+###  Tailwind CSS Usage Reference
 
+#### Configuration
+
+configuring-variants
+> The `variants` section of your `tailwind.config.js` file is where you control which variants should be enabled for each core plugin:
+* https://tailwindcss.com/docs/configuring-variants
+
+tailwindcss-group-hover-not-working-on-border-color
+* https://stackoverflow.com/questions/63266702/tailwindcss-group-hover-not-working-on-border-color
+
+#### Design
 Container
 * https://tailwindcss.tw/docs/container
 
 Table
 * https://tailwindcss.com/docs/border-collapse
 
+Step by step from scratch
+* https://www.honeybadger.io/blog/tailwind-css-rails
+
+#### Tools
 Components
 * https://tailwindcomponents.com/components
+
+Quick Cheatsheet
+* https://tailwindcomponents.com/cheatsheet
 
 TailwindCSS Page Creator
 * https://devdojo.com/tails
